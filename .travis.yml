@@ -3,5 +3,4 @@ jdk:
   - openjdk11
 
 script:
-  - echo "Build started"
   - mvn clean compile
