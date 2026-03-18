@@ -2,14 +2,6 @@ language: java
 jdk:
   - openjdk11
 
-addons:
-  sonarcloud:
-    organization: $SONAR_ORG
-    token:
-      secure: $SONAR_TOKEN
-
 script:
-  - mvn clean compile sonar:sonar -Dsonar.projectKey=$SONAR_PROJECT_KEY
-
-git:
-  depth: false
+  - echo "Build started"
+  - mvn clean compile
